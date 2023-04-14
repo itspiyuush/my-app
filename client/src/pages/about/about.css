@@ -1,0 +1,16 @@
+.about {
+  font-family: Lora;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  width: auto;
+  height: 550px;
+}
+p {
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
