@@ -34,7 +34,6 @@
   margin-right: 150px;
   border-radius: 50%;
   object-fit: cover;
-  cursor: pointer;
 }
 
 .topList {
@@ -65,6 +64,7 @@ ul li:hover {
   font-size: 18px;
   color: #666;
   cursor: pointer;
+  
 }
 .maintxt {
   top: 8%;

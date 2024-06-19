@@ -1,11 +1,13 @@
-import "./past.css";
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import { Link } from "react-router-dom";
-
+import "./past.css";
 export default function Past({ post }) {
-  const PF = "http://localhost:5000/images/";
   return (
-    <div className="post">
-      {post.photo && <img className="postImg" src={PF + post.photo} alt="" />}
+    <div className="past">
+      
+        {post.photo && <img className="postImg" src={post.photo} alt="blog image"/>}
+      
+
       <div className="postInfo">
         <div className="postCats">
           {post.categories.map((c) => (
@@ -15,6 +17,7 @@ export default function Past({ post }) {
         <Link to={`/post/${post._id}`} className="linkc">
           <span className="postTitle">{post.title}</span>
         </Link>
+
         <hr />
         <span className="postDate">
           {new Date(post.createdAt).toDateString()}

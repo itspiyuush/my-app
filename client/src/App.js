@@ -1,4 +1,7 @@
+// import Home from "./pages/home/Home";
+import TopBar from "./components/topbar/topbar";
 import { Route, Routes, React, BrowserRouter } from "react-router-dom";
+
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
@@ -7,17 +10,12 @@ import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
-import Topbar from "./components/topbar/Topbar";
-
-import { useContext } from "react";
-import { Context } from "./context/Context";
-
 
 function App() {
-  const { user } = useContext(Context);
+  const user = false;
   return (
     <BrowserRouter>
-      <Topbar />
+      <TopBar />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
